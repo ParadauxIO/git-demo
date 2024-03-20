@@ -7,7 +7,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text>My super cool app title</Text>
+      <Text>My Git Demo</Text>
       <TouchableOpacity style={[styles.button, {backgroundColor: "lightgreen"}]} onPress={() => setCounter(prev => prev + 1)}>
         <Text>+</Text>
       </TouchableOpacity>
