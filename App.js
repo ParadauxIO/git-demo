@@ -8,10 +8,10 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Git Demo 2</Text>
-      <TouchableOpacity onPress={() => setCounter(prev => prev + 1)}>
+      <TouchableOpacity style={[styles.button, {backgroundColor: "lightgreen"}]} onPress={() => setCounter(prev => prev + 1)}>
         <Text>+</Text>
       </TouchableOpacity>
-      <TouchableOpacity onPress={() => setCounter(prev => prev - 1)}>
+      <TouchableOpacity style={[styles.button, {backgroundColor: "pink"}]} onPress={() => setCounter(prev => prev - 1)}>
         <Text>-</Text>
       </TouchableOpacity>
       <Text>Counter: {counter}</Text>
@@ -27,4 +27,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  button: {
+    paddingHorizontal: 10,
+    paddingVertical: 5,
+    margin: 5,
+    backgroundColor: "rgb(255, 255, 0)",
+    borderRadius: 12
+  }
 });
