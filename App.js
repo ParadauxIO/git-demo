@@ -11,6 +11,9 @@ export default function App() {
       <TouchableOpacity onPress={() => setCounter(prev => prev + 1)}>
         <Text>+</Text>
       </TouchableOpacity>
+      <TouchableOpacity onPress={() => setCounter(prev => prev - 1)}>
+        <Text>-</Text>
+      </TouchableOpacity>
       <Text>Counter: {counter}</Text>
       <StatusBar style="auto" />
     </View>
